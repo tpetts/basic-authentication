@@ -12,6 +12,7 @@ function Protected(props) {
     useEffect(() => {
         Auth.currentAuthenticatedUser()
             .catch(() => {
+                // The user isn't signed in, so we need to redirect them by calling this:
                 props.history.push('/profile')
             })
     }, []);
