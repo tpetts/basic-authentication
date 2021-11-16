@@ -10,6 +10,7 @@ import Protected from "./Protected";
 
 const Router = () => {
     const [current, setCurrent] = useState('home')
+    // Hook
     useEffect(() => {
         setRoute()
         window.addEventListener('hashchange', setRoute)
