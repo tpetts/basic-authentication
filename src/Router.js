@@ -2,7 +2,7 @@
  * This file will hold the router and some logic to determine the current route name.
  */
 import React, { useState, useEffect } from "react";
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Nav from "./Nav";
 import Public from "./Public";
 import Profile from './Profile';
@@ -26,12 +26,12 @@ const Router = () => {
     return (
         <HashRouter>
             <Nav current={current} />
-            <Switch>
+            <Routes>
                 <Route exact path="/" component={Public} />
                 <Route exact path="/protected" component={Protected} />
                 <Route exact path="/profile" component={Profile} />
                 <Route component={Public} />
-            </Switch>
+            </Routes>
         </HashRouter>
     )
 }
