@@ -4,7 +4,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
-import { HomeOutlined, ProfileOutlined,                FileProtectOutlined } from '@ant-design/icons';
+import { HomeOutlined, ProfileOutlined, FileProtectOutlined } from '@ant-design/icons';
 
 const Nav = (props) => {
     // Current represents the name of the current route.
