@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import Public from "./Public";
 import Profile from './Profile';
 import Protected from "./Protected";
+import About from "./About";
 
 const Router = () => {
     const [current, setCurrent] = useState('home')
@@ -28,6 +29,7 @@ const Router = () => {
             <Nav current={current} />
             <Routes>
                 <Route exact path="/" element={< Public />} />
+                <Route exact path="/about" element={< About/>} />
                 <Route exact path="/protected" element={< Protected />} />
                 <Route exact path="/profile" element={< Profile />} />
                 <Route element={< Public />} />
